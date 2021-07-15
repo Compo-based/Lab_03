@@ -2,12 +2,6 @@
   <h1>Events For Good</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
-
-    <CategoryAndOrganizer
-      v-for="event in events"
-      :key="event.id"
-      :categoryAndorganizer="event"
-    />
   </div>
 </template>
 
@@ -17,7 +11,7 @@ import EventCard from '@/components/EventCard.vue'
 export default {
   name: 'EventList',
   components: {
-    EventCard,
+    EventCard
   },
   data() {
     return {

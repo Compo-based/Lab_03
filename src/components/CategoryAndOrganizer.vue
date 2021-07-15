@@ -4,6 +4,7 @@
     <div>Organizer Name:{{ categoryAndorganizer.organizer }}</div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'CategoryAndOrganizer',
