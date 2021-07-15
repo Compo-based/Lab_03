@@ -2,6 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import EventList from '../views/EventList.vue'
 import About from '../views/About.vue'
 import CategoryAndOrganizer from '../views/CategoryAndOrganizerList.vue'
+import Students from '../views/StudentList.vue'
+
 const routes = [
   {
     path: '/',
@@ -20,7 +22,13 @@ const routes = [
     path: '/CategoryOrganizerList',
     name: 'CategoryAndOrganizerList',
     component: CategoryAndOrganizer
+  },
+  {
+    path: '/StudentsList',
+    name: 'StudentsList',
+    component: Students
   }
+
 ]
 
 const router = createRouter({

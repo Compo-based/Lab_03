@@ -1,5 +1,5 @@
 <template>
-  <h1>Events For Good</h1>
+  <h1>Category and Organizer</h1>
   <div class="events">
     <CategoryAndOrganizer
       v-for="event in events"

@@ -1,18 +1,18 @@
 <template>
-  <h1>Events For Good</h1>
+  <h1>Student List</h1>
   <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event" />
+    <Students v-for="event in events" :key="event.id" :student="event" />
   </div>
 </template>
 
 <script>
-import EventCard from '@/components/EventCard.vue'
-import EventServices from '@/services/EventServices.js'
+import Students from '@/components/Students.vue'
+import StudentServices from '@/services/StudentServices.js'
 
 export default {
-  name: 'EventList',
+  name: 'StudentsList',
   components: {
-    EventCard
+    Students
   },
   data() {
     return {
@@ -20,7 +20,7 @@ export default {
     }
   },
   created() {
-    EventServices.getEvents()
+    StudentServices.getEvents()
       .then((response) => {
         this.events = response.data
       })

@@ -2,7 +2,11 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/CategoryOrganizerList">Category and Organizer</router-link>
+    <router-link to="/CategoryOrganizerList"
+      >Category and Organizer</router-link
+    >
+    |
+    <router-link to="/StudentsList">Students</router-link>
   </div>
   <router-view />
 </template>
