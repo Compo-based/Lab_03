@@ -21,7 +21,6 @@ export default {
 .event-card {
   padding: 20px;
   width: 250px;
-  height: 120px;
   cursor: pointer;
   border: 1px solid #39495c;
   margin-bottom: 18px;

@@ -1,29 +1,20 @@
 <template>
+  <h1>Events For Good</h1>
   <div class="events">
-    <tr>
-      <td>
-        <EventCard v-for="event in events" :key="event.id" :event="event" />
-      </td>
-
-      <td>
-        <CategoryAndOrganizer
-          v-for="event in events"
-          :key="event.id"
-          :categoryAndorganizer="event"
-        />
-      </td>
-    </tr>
+    <CategoryAndOrganizer
+      v-for="event in events"
+      :key="event.id"
+      :categoryAndorganizer="event"
+    />
   </div>
 </template>
 
 <script>
-import EventCard from '@/components/EventCard.vue'
 import CategoryAndOrganizer from '@/components/CategoryAndOrganizer.vue'
 
 export default {
-  name: 'Home',
+  name: 'CategoryAndOrganizerList',
   components: {
-    EventCard,
     CategoryAndOrganizer
   },
   data() {
